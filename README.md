@@ -1,2 +1,5 @@
 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY
 ![Alt text](image.png)
+
+1.0 Create a VPC
+![Alt text](image-1.png)
