@@ -23,5 +23,28 @@ This is the public subnet created
 Then create the Private subnets based on the design
 ![Alt text](image-7.png)
 
+5.0 Create Route Table:
+
+5.1 Create Public and Private Subnet Route Tables;
+![Alt text](image-8.png)
+
+6.0 Associate the public subnet to the public route table and Private subnet to the Private route table;
+![Alt text](image-9.png)
+
+7.0 Configure the route tables accordingly;
+This is the public route table config;
+![Alt text](image-10.png)
+
+The Private route will be routed to through NAT Gateway, so we will have to create the NAT Gateway first. Also we will asign Elastic IP to the NAT Gateway.
+First of all, allocate Elastic IP, then associate it to the NAT Gateway;
+![Alt text](image-11.png)
+
+8.0 Create a Security Group for:
+* Nginx Servers: Access to Nginx should only be allowed from a Application Load balancer (ALB). At this point, we have not created a load balancer, therefore we will update the rules later. For now, just create it and put some dummy records as a place holder.
+* Bastion Servers: Access to the Bastion servers should be allowed only from workstations that need to SSH into the bastion servers. Hence, you can use your workstation public IP address. To get this information, simply go to your terminal and type curl www.canhazip.com
+* Application Load Balancer: ALB will be available from the Internet
+Webservers: Access to Webservers should only be allowed from the Nginx servers. Since we do not have the servers created yet, just put some dummy records as a place holder, we will update it later.
+* Data Layer: Access to the Data layer, which is comprised of Amazon Relational Database Service (RDS) and Amazon Elastic File System (EFS) must be carefully desinged – only webservers should be able to connect to RDS, while Nginx and Webservers will have access to EFS Mountpoint.
+
 
 
