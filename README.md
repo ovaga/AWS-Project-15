@@ -11,3 +11,17 @@ AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY
 ![Alt text](image-4.png)
 
 4.0 Create the subnets
+
+Click on the Subnets and you will see subnets that are associated with default VPC;
+![Alt text](image-5.png)
+
+The click on "Create Subnet" to create the subnets that will be associated with this our "Pro-15-VPC"
+
+This is the public subnet created
+![Alt text](image-6.png)
+
+Then create the Private subnets based on the design
+![Alt text](image-7.png)
+
+
+
