@@ -49,6 +49,20 @@ First of all, allocate Elastic IP, then associate it to the NAT Gateway;
 ![Alt text](image-12.png)
 
 ![Alt text](image-13.png)
-what is next
 
+9.0 The next thing we gonna create now is the certificate;
+NB: Before creating the certificate, i have purchased a Domain Name for NameCheap Domain Registerar. Also this domain name is transfered to aws;
+![Alt text](image-14.png)
+Then go to aws certificate manager to create a certificate and attach it to a domain name. Why we are creating the certificate first is that when am creating the actual load balancer I will need to select a certificate bcos the instances behind the actual load balancer will listen on port 443, so we will need to select the certificate for that.
+![Alt text](image-15.png)
+
+10.0 Create aws EFS;
+Sear for aws EFS in your console, 
+![Alt text](image-16.png)
+![Alt text](image-17.png)
+
+The next thing we gonna create is the access point; 
+Access point is what will specify to the webservers to mount with. Here we have tooling webserver and wordpress webservers. So we are going to create two access points; one for tooling and one for wordpress webservers;
+NB: You should never mount two servers on a single access point otherwise the servers will overwrite each others. This will mess up our infratructures.
+![Alt text](image-18.png)
 
