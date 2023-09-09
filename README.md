@@ -65,4 +65,12 @@ The next thing we gonna create is the access point;
 Access point is what will specify to the webservers to mount with. Here we have tooling webserver and wordpress webservers. So we are going to create two access points; one for tooling and one for wordpress webservers;
 NB: You should never mount two servers on a single access point otherwise the servers will overwrite each others. This will mess up our infratructures.
 ![Alt text](image-18.png)
+So these two access point above is created
 
+11.0 Create aws RDS
+
+Before we create our RDS, there are two things we need to do, first, create a KSM key and a KSM Store and secondly we need to create a subnet group.
+
+Setup RDS
+Pre-requisite: Create a KMS key from Key Management Service (KMS) to be used to encrypt the database instance.
+Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
