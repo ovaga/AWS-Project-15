@@ -49,4 +49,6 @@ First of all, allocate Elastic IP, then associate it to the NAT Gateway;
 ![Alt text](image-12.png)
 
 ![Alt text](image-13.png)
+what is next
+
 
