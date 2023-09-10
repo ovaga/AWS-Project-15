@@ -74,3 +74,7 @@ Before we create our RDS, there are two things we need to do, first, create a KS
 Setup RDS
 Pre-requisite: Create a KMS key from Key Management Service (KMS) to be used to encrypt the database instance.
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+![Alt text](image-19.png)
+
+Create a subnet group and add 2 private subnets (data Layer)
